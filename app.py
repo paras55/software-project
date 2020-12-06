@@ -1,3 +1,5 @@
+from flask import Flask, render_template, request
+from flask import Flask, request, render_template, redirect, url_for
 from flask import Flask, render_template, request,send_file
 from werkzeug.utils import secure_filename
 from flask_ngrok import run_with_ngrok
@@ -12,14 +14,33 @@ from google.colab.patches import cv2_imshow
 faceCascade = cv2.CascadeClassifier("haarcascade_frontalface_alt2.xml")
 model = load_model("mask_recog.h5")
 
+
 app = Flask(__name__)
-run_with_ngrok(app)
+
 
 @app.route('/')
-def upload1_file():
+def index():
    return render_template('index.html')
-	
 
+
+@app.route('/login')
+def login():
+   return render_template('login.html')
+
+@app.route('/upload')
+def upload():
+   return render_template('upload.html')
+
+@app.route('/query',methods=["POST", "GET"])
+def query():
+    print('hello')
+    if request.method=="POST": 
+        username = request.form['username']
+        password = request.form['password']
+        if username == 'thapar' and password == 'thapar':
+            return render_template('admin.html')
+    else:
+            return render_template('login.html')
 def face_mask_detector(frame):
   # frame = cv2.imread(fileName)
   gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
@@ -86,3 +107,4 @@ def upload_video():
 		
 if __name__ == '__main__':
    app.run()
+
