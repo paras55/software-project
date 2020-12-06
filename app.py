@@ -29,7 +29,7 @@ def login():
 
 @app.route('/upload')
 def upload():
-   return render_template('upload.html')
+   return render_template('demo.html')
 
 @app.route('/query',methods=["POST", "GET"])
 def query():
