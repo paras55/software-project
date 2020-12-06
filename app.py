@@ -82,7 +82,7 @@ def upload_image():
       output = face_mask_detector(input_image)
       filename = 'hello.jpg'
       cv2.imwrite(filename, output) 
-      return render_template("show.html", user_image = 'hello.jpg')
+      return send_file(filename, as_attachment=True)
       #return cv2_imshow(output)
 
 @app.route('/video', methods = ['GET', 'POST'])
