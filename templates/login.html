@@ -36,14 +36,14 @@
                 <form
                   class="form-horizontal w-3/4 mx-auto"
                   method="POST"
-                  action="#"
+                  action={{ url_for('query') }}
                 >
                   <div class="flex flex-col mt-4">
                     <input
-                      id="email"
+                      id="username"
                       type="text"
                       class="flex-grow h-8 px-2 border rounded border-grey-400"
-                      name="email"
+                      name="username"
                       value=""
                       placeholder="Email"
                     />
@@ -79,12 +79,7 @@
                   </div>
                 </form>
                 <div class="text-center mt-4">
-                  <a
-                    class="no-underline hover:underline text-blue-dark text-xs"
-                    href="{{ route('password.request') }}"
-                  >
-                    Forgot Your Password?
-                  </a>
+                  
                 </div>
               </div>
             </div>
