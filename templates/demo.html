@@ -1,152 +1,290 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
     <title>Document</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <nav class="bg-gray-800">
-        <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
-            <div class="relative flex items-center justify-between h-16">
-                <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
-                    <!-- Mobile menu button-->
-                    <button
-                        class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
-                        aria-expanded="false">
-                        <span class="sr-only">Open main menu</span>
-                        <!-- Icon when menu is closed. -->
-                        <!--
+      <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+        <div class="relative flex items-center justify-between h-16">
+          <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+            <!-- Mobile menu button-->
+            <button
+              class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+              aria-expanded="false"
+            >
+              <span class="sr-only">Open main menu</span>
+              <!-- Icon when menu is closed. -->
+              <!--
                 Heroicon name: menu
     
                 Menu open: "hidden", Menu closed: "block"
               -->
-                        <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor" aria-hidden="true">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M4 6h16M4 12h16M4 18h16" />
-                        </svg>
-                        <!-- Icon when menu is open. -->
-                        <!--
+              <svg
+                class="block h-6 w-6"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+              <!-- Icon when menu is open. -->
+              <!--
                 Heroicon name: x
     
                 Menu open: "block", Menu closed: "hidden"
               -->
-                        <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor" aria-hidden="true">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M6 18L18 6M6 6l12 12" />
-                        </svg>
-                    </button>
-                </div>
-                <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
-                    <div class="flex-shrink-0 flex items-center">
-                        <img class="block lg:hidden h-8 w-auto"
-                            src="https://pngimage.net/wp-content/uploads/2018/05/doctor-plus-symbol-png-6.png"
-                            alt="Workflow">
-                        <img class="hidden lg:block h-8 w-auto"
-                            src="https://pngimage.net/wp-content/uploads/2018/05/doctor-plus-symbol-png-6.png"
-                            alt="Workflow">
-                        <span class="text-green-300 font-bold">X-SPARK</span>
-
-                    </div>
-                    <div class="hidden sm:block sm:ml-6">
-                        <div class="flex space-x-4">
-                            <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-                            <a href="#" class="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium">Home</a>
-                            <a href="#"
-                                class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Features</a>
-                            <a href="demo.html"
-                                class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Demo</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-                    <a type="button" href="login.html"
-                        class="border border-gray-700 bg-gray-700 text-white rounded-md px-4 py-2 m-2  select-none hover:bg-gray-800 focus:outline-none focus:shadow-outline">
-                        Login
-                    </a>
-                </div>
+              <svg
+                class="hidden h-6 w-6"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+          </div>
+          <div
+            class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start"
+          >
+            <div class="flex-shrink-0 flex items-center">
+              <img
+                class="block lg:hidden h-8 w-auto"
+                src="https://pngimage.net/wp-content/uploads/2018/05/doctor-plus-symbol-png-6.png"
+                alt="Workflow"
+              />
+              <img
+                class="hidden lg:block h-8 w-auto"
+                src="https://pngimage.net/wp-content/uploads/2018/05/doctor-plus-symbol-png-6.png"
+                alt="Workflow"
+              />
+              <span class="text-green-300 font-bold">X-SPARK</span>
             </div>
+            <div class="hidden sm:block sm:ml-6">
+              <div class="flex space-x-4">
+                <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                <a
+                  href="#"
+                  class="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium"
+                  >Home</a
+                >
+                <a
+                  href="#"
+                  class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                  >Features</a
+                >
+                <a
+                  href="demo.html"
+                  class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                  >Demo</a
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0"
+          >
+            <a
+              type="button"
+              href="login.html"
+              class="border border-gray-700 bg-gray-700 text-white rounded-md px-4 py-2 m-2 select-none hover:bg-gray-800 focus:outline-none focus:shadow-outline"
+            >
+              Login
+            </a>
+          </div>
         </div>
+      </div>
 
-        <!--
+      <!--
         Mobile menu, toggle classes based on menu state.
     
         Menu open: "block", Menu closed: "hidden"
       -->
-        <div class="hidden sm:hidden">
-            <div class="px-2 pt-2 pb-3 space-y-1">
-                <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-                <a href="#" class="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium">Home</a>
-                <a href="#Features"
-                    class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Features</a>
-                <a href="#"
-                    class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Features</a>
-                <a href="demo.html"
-                    class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Demo</a>
-            </div>
+      <div class="hidden sm:hidden">
+        <div class="px-2 pt-2 pb-3 space-y-1">
+          <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+          <a
+            href="#"
+            class="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium"
+            >Home</a
+          >
+          <a
+            href="#Features"
+            class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+            >Features</a
+          >
+          <a
+            href="#"
+            class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+            >Features</a
+          >
+          <a
+            href="demo.html"
+            class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+            >Demo</a
+          >
         </div>
+      </div>
     </nav>
-    <form>
-        <div class="flex w-full h-screen items-center justify-center bg-grey-lighter">
-
-            <label
-                class="w-64 flex flex-col items-center px-4 py-6 bg-white text-blue rounded-lg shadow-lg tracking-wide uppercase border border-blue cursor-pointer hover:bg-blue hover:text-white">
-                <svg class="w-8 h-8" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                    <path
-                        d="M16.88 9.1A4 4 0 0 1 16 17H5a5 5 0 0 1-1-9.9V7a3 3 0 0 1 4.52-2.59A4.98 4.98 0 0 1 17 8c0 .38-.04.74-.12 1.1zM11 11h3l-4-4-4 4h3v3h2v-3z" />
+    <!-- component -->
+    <div
+      id="container"
+      class="flex flex-wrap justify-center content-center px-4 sm:px-0 md:mt-60"
+    >
+      <div class="flex flex-col sm:flex-row">
+        <!-- Card 1 -->
+        <div class="sm:w-1/4 p-2">
+          <div
+            class="flex flex-col items-center bg-green-100 px-6 py-8 rounded-lg shadow-lg text-center"
+          >
+            <div class="mb-3">
+              <label
+                class="w-64 flex flex-col items-center px-4 py-6 bg-green-50 text-blue rounded-lg shadow-lg tracking-wide uppercase border border-blue cursor-pointer hover:bg-blue hover:text-gray-300"
+              >
+                <svg
+                  class="w-8 h-8"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    d="M16.88 9.1A4 4 0 0 1 16 17H5a5 5 0 0 1-1-9.9V7a3 3 0 0 1 4.52-2.59A4.98 4.98 0 0 1 17 8c0 .38-.04.74-.12 1.1zM11 11h3l-4-4-4 4h3v3h2v-3z"
+                  />
                 </svg>
                 <span class="mt-2 text-base leading-normal">Select a file</span>
-                <input type='file' class="hidden" />
-            </label>
-        </div>
-    </form>
-    <form>
-        <div class="flex w-full h-screen items-center justify-center bg-grey-lighter">
+                <input type="file" class="hidden" />
+              </label>
+            </div>
+            <h2 class="text-xl font-medium text-gray-700">Image</h2>
+            <span class="text-blue-500 block mb-5">Mask Detection</span>
 
-            <label
-                class="w-64 flex flex-col items-center px-4 py-6 bg-white text-blue rounded-lg shadow-lg tracking-wide uppercase border border-blue cursor-pointer hover:bg-blue hover:text-white">
-                <svg class="w-8 h-8" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                    <path
-                        d="M16.88 9.1A4 4 0 0 1 16 17H5a5 5 0 0 1-1-9.9V7a3 3 0 0 1 4.52-2.59A4.98 4.98 0 0 1 17 8c0 .38-.04.74-.12 1.1zM11 11h3l-4-4-4 4h3v3h2v-3z" />
+            <a href="#" class="px-4 py-2 bg-blue-500 text-white rounded-full"
+              >Submit</a
+            >
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="sm:w-1/4 p-2">
+          <div
+            class="flex flex-col items-center bg-green-100 px-6 py-8 rounded-lg shadow-lg text-center"
+          >
+            <div class="mb-3">
+              <label
+                class="w-64 flex flex-col items-center px-4 py-6 bg-green-50 text-blue rounded-lg shadow-lg tracking-wide uppercase border border-blue cursor-pointer hover:bg-blue hover:text-gray-300"
+              >
+                <svg
+                  class="w-8 h-8"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    d="M16.88 9.1A4 4 0 0 1 16 17H5a5 5 0 0 1-1-9.9V7a3 3 0 0 1 4.52-2.59A4.98 4.98 0 0 1 17 8c0 .38-.04.74-.12 1.1zM11 11h3l-4-4-4 4h3v3h2v-3z"
+                  />
                 </svg>
                 <span class="mt-2 text-base leading-normal">Select a file</span>
-                <input type='file' class="hidden" />
-            </label>
-        </div>
-    </form>
-    <form>
-        <div class="flex w-full h-screen items-center justify-center bg-grey-lighter">
+                <input type="file" class="hidden" />
+              </label>
+            </div>
+            <h2 class="text-xl font-medium text-gray-700">Video</h2>
+            <span class="text-blue-500 block mb-5">Mask Detection</span>
 
-            <label
-                class="w-64 flex flex-col items-center px-4 py-6 bg-white text-blue rounded-lg shadow-lg tracking-wide uppercase border border-blue cursor-pointer hover:bg-blue hover:text-white">
-                <svg class="w-8 h-8" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                    <path
-                        d="M16.88 9.1A4 4 0 0 1 16 17H5a5 5 0 0 1-1-9.9V7a3 3 0 0 1 4.52-2.59A4.98 4.98 0 0 1 17 8c0 .38-.04.74-.12 1.1zM11 11h3l-4-4-4 4h3v3h2v-3z" />
+            <a href="#" class="px-4 py-2 bg-blue-500 text-white rounded-full"
+              >Submit</a
+            >
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="sm:w-1/4 p-2">
+          <div
+            class="flex flex-col items-center bg-green-100 px-6 py-8 rounded-lg shadow-lg text-center"
+          >
+            <div class="mb-3">
+              <label
+                class="w-64 flex flex-col items-center px-4 py-6 bg-green-50 text-blue rounded-lg shadow-lg tracking-wide uppercase border border-blue cursor-pointer hover:bg-blue hover:text-gray-300"
+              >
+                <svg
+                  class="w-8 h-8"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    d="M16.88 9.1A4 4 0 0 1 16 17H5a5 5 0 0 1-1-9.9V7a3 3 0 0 1 4.52-2.59A4.98 4.98 0 0 1 17 8c0 .38-.04.74-.12 1.1zM11 11h3l-4-4-4 4h3v3h2v-3z"
+                  />
                 </svg>
                 <span class="mt-2 text-base leading-normal">Select a file</span>
-                <input type='file' class="hidden" />
-            </label>
-        </div>
-    </form>
-    <form>
-        <div class="flex w-full h-screen items-center justify-center bg-grey-lighter">
+                <input type="file" class="hidden" />
+              </label>
+            </div>
+            <h2 class="text-xl font-medium text-gray-700">Image</h2>
+            <span class="text-blue-500 block mb-5"
+              >Social Distance Detection</span
+            >
 
-            <label
-                class="w-64 flex flex-col items-center px-4 py-6 bg-white text-blue rounded-lg shadow-lg tracking-wide uppercase border border-blue cursor-pointer hover:bg-blue hover:text-white">
-                <svg class="w-8 h-8" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                    <path
-                        d="M16.88 9.1A4 4 0 0 1 16 17H5a5 5 0 0 1-1-9.9V7a3 3 0 0 1 4.52-2.59A4.98 4.98 0 0 1 17 8c0 .38-.04.74-.12 1.1zM11 11h3l-4-4-4 4h3v3h2v-3z" />
+            <a href="#" class="px-4 py-2 bg-blue-500 text-white rounded-full"
+              >Submit</a
+            >
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="sm:w-1/4 p-2">
+          <div
+            class="flex flex-col items-center bg-green-100 px-6 py-8 rounded-lg shadow-lg text-center"
+          >
+            <div class="mb-3">
+              <label
+                class="w-64 flex flex-col items-center px-4 py-6 bg-green-50 text-blue rounded-lg shadow-lg tracking-wide uppercase border border-blue cursor-pointer hover:bg-blue hover:text-gray-300"
+              >
+                <svg
+                  class="w-8 h-8"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    d="M16.88 9.1A4 4 0 0 1 16 17H5a5 5 0 0 1-1-9.9V7a3 3 0 0 1 4.52-2.59A4.98 4.98 0 0 1 17 8c0 .38-.04.74-.12 1.1zM11 11h3l-4-4-4 4h3v3h2v-3z"
+                  />
                 </svg>
                 <span class="mt-2 text-base leading-normal">Select a file</span>
-                <input type='file' class="hidden" />
-            </label>
-        </div>
-    </form>
-</body>
+                <input type="file" class="hidden" />
+              </label>
+            </div>
+            <h2 class="text-xl font-medium text-gray-700">Video</h2>
+            <span class="text-blue-500 block mb-5"
+              >Social Distance Detection</span
+            >
 
+            <a href="#" class="px-4 py-2 bg-blue-500 text-white rounded-full"
+              >Submit</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
