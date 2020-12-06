@@ -1,75 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
     <title>Document</title>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <!-- component -->
-    <section class="absolute w-full top-0">
-        <div class="absolute top-0 w-full h-full bg-gray-900"
-            style="background-image: url(&quot;https://demos.creative-tim.com/tailwindcss-starter-project/static/media/register_bg_2.2fee0b50.png&quot;); background-size: 100%; background-repeat: no-repeat;">
+    <!-- component -->
+    <div class="bg-gradient-to-r from-blue-300 to-green-700 h-screen w-screen">
+      <div
+        class="flex flex-col items-center flex-1 h-full justify-center px-4 sm:px-0"
+      >
+        <div
+          class="flex rounded-lg shadow-lg w-full sm:w-3/4 lg:w-1/2 bg-white sm:mx-0"
+          style="height: 500px"
+        >
+          <div class="flex flex-col w-full md:w-1/2 p-4">
+            <div class="flex flex-col flex-1 justify-center mb-8">
+              <h1 class="text-green-500 text-4xl text-center font-bold">
+                <img
+                  class="h-8 w-8"
+                  src="https://pngimage.net/wp-content/uploads/2018/05/doctor-plus-symbol-png-6.png"
+                  alt="green logo"
+                />
+                X-Spark
+              </h1>
+
+              <div class="w-full mt-4">
+                <form
+                  class="form-horizontal w-3/4 mx-auto"
+                  method="POST"
+                  action="#"
+                >
+                  <div class="flex flex-col mt-4">
+                    <input
+                      id="email"
+                      type="text"
+                      class="flex-grow h-8 px-2 border rounded border-grey-400"
+                      name="email"
+                      value=""
+                      placeholder="Email"
+                    />
+                  </div>
+                  <div class="flex flex-col mt-4">
+                    <input
+                      id="password"
+                      type="password"
+                      class="flex-grow h-8 px-2 rounded border border-grey-400"
+                      name="password"
+                      required
+                      placeholder="Password"
+                    />
+                  </div>
+                  <div class="flex items-center mt-4">
+                    <input
+                      type="checkbox"
+                      name="remember"
+                      id="remember"
+                      class="mr-2"
+                    />
+                    <label for="remember" class="text-sm text-grey-dark"
+                      >Remember Me</label
+                    >
+                  </div>
+                  <div class="flex flex-col mt-8">
+                    <button
+                      type="submit"
+                      class="bg-green-500 hover:bg-green-700 text-white text-sm font-semibold py-2 px-4 rounded"
+                    >
+                      Login
+                    </button>
+                  </div>
+                </form>
+                <div class="text-center mt-4">
+                  <a
+                    class="no-underline hover:underline text-blue-dark text-xs"
+                    href="{{ route('password.request') }}"
+                  >
+                    Forgot Your Password?
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="hidden md:block md:w-1/2 rounded-r-lg"
+            style="
+              background: url('https://images.unsplash.com/photo-1584820927498-cfe5211fd8bf?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=900&ixlib=rb-1.2.1&q=80&w=1600');
+              background-size: cover;
+              background-position: center center;
+            "
+          ></div>
         </div>
-        
-        
-        <div class="container mx-auto px-4 h-full">
-        <h1> style="color:#000000">LOGIN</h1>
-        
-            <div class="flex content-center items-center justify-center h-full">
-                <div class="w-full lg:w-4/12 px-4 pt-32">
-                    <div
-                        class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-gray-300 border-0">
-                        <div class="rounded-t mb-0 px-6 py-6">
-                            
-                            <hr class="mt-6 border-b-1 border-gray-400">
-                        </div>
-                        <div class="flex-auto px-4 lg:px-10 py-10 pt-0">
-                        
-                            <form method="post" action="{{ url_for('query') }}">
-            <div class="input">
-                <div class="input-addon">
-                    <i class="material-icons">Username</i>
-                </div>
-                <input id="username" placeholder="Username" type="text" name="username" required class="validate" autocomplete="off">
-            </div>
-
-            <div class="clearfix"></div>
-
-            <div class="input">
-                <div class="input-addon">
-                    <i class="material-icons">Password</i>
-                </div>
-                <input id="password" placeholder="Password" type="password" name="password" required class="validate" autocomplete="off">
-            </div>
-
-            <br>
-            <br>
-
-            <input type="submit" class="btn btn-primary" value="Log In" />
-            
-            <br>
-               <br>
-               {{ warning }}
-        </form>
-        
-                        </div>
-                    </div>
-                    <div class="flex flex-wrap mt-6">
-                        <div class="w-1/2"><a href="#pablo" class="text-gray-300"><small>Forgot password?</small></a>
-                        </div>
-                        <div class="w-1/2 text-right"><a href="#pablo" class="text-gray-300"><small>Create new
-                                    account</small></a></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-    </section>
-</body>
-
+      </div>
+    </div>
+  </body>
 </html>

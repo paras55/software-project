@@ -9,7 +9,7 @@ from tensorflow.keras.preprocessing.image import img_to_array
 from tensorflow.keras.models import load_model
 from tensorflow.keras.applications.mobilenet_v2 import preprocess_input
 import numpy as np
-from google.colab.patches import cv2_imshow
+# from google.colab.patches import cv2_imshow
 
 faceCascade = cv2.CascadeClassifier("haarcascade_frontalface_alt2.xml")
 model = load_model("mask_recog.h5")
