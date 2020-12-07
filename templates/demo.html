@@ -172,16 +172,16 @@
                     d="M16.88 9.1A4 4 0 0 1 16 17H5a5 5 0 0 1-1-9.9V7a3 3 0 0 1 4.52-2.59A4.98 4.98 0 0 1 17 8c0 .38-.04.74-.12 1.1zM11 11h3l-4-4-4 4h3v3h2v-3z"
                   />
                 </svg>
+                <form action = "/image" method = "post" enctype="multipart/form-data"> 
                 <span class="mt-2 text-base leading-normal">Select a file</span>
-                <input type="file" class="hidden" />
+                <input type="file" name = "file" class="hidden" />
               </label>
             </div>
             <h2 class="text-xl font-medium text-gray-700">Image</h2>
             <span class="text-blue-500 block mb-5">Mask Detection</span>
-
-            <a href="#" class="px-4 py-2 bg-blue-500 text-white rounded-full"
-              >Submit</a
-            >
+            <input type = "submit" class="px-4 py-2 bg-blue-500 text-white rounded-full" >
+            
+            </form>
           </div>
         </div>
 
@@ -204,16 +204,16 @@
                     d="M16.88 9.1A4 4 0 0 1 16 17H5a5 5 0 0 1-1-9.9V7a3 3 0 0 1 4.52-2.59A4.98 4.98 0 0 1 17 8c0 .38-.04.74-.12 1.1zM11 11h3l-4-4-4 4h3v3h2v-3z"
                   />
                 </svg>
+                <form action = "/video" method = "post" enctype="multipart/form-data">
                 <span class="mt-2 text-base leading-normal">Select a file</span>
-                <input type="file" class="hidden" />
+                <input type="file" name="file" class="hidden" />
               </label>
             </div>
             <h2 class="text-xl font-medium text-gray-700">Video</h2>
             <span class="text-blue-500 block mb-5">Mask Detection</span>
 
-            <a href="#" class="px-4 py-2 bg-blue-500 text-white rounded-full"
-              >Submit</a
-            >
+            <input type = "submit" class="px-4 py-2 bg-blue-500 text-white rounded-full" >
+            
           </div>
         </div>
 
