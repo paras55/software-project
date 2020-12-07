@@ -31,15 +31,32 @@ def login():
 def upload():
    return render_template('demo.html')
 
+@app.route('/data')
+def upload1():
+   return render_template('admin_data.html')
+
+@app.route('/request')
+def upload2():
+   return render_template('admin_request.html')
+
 @app.route('/query',methods=["POST", "GET"])
 def query():
     print('hello')
     if request.method=="POST": 
         username = request.form['username']
         password = request.form['password']
-        if username == 'thapar' and password == 'thapar':
-            return render_template('admin.html')
-    else:
+        print(username)
+        print(password)
+        if username == 'thapar' and password == 'root':
+            return render_template('admin_request.html')
+
+        elif username == 'client1' and password == 'client1':
+            return render_template('admin_dashboard.html')
+
+        elif username == 'client2' and password == 'client2':
+            return render_template('admin_dashboard.html')
+        
+        else:
             return render_template('login.html')
 def face_mask_detector(frame):
   # frame = cv2.imread(fileName)
