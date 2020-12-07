@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+    rel="stylesheet"
+  />
+    <title>Document</title>
+</head>
+<body>
+    
+    <nav class="bg-gray-800">
+        <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+          <div class="relative flex items-center justify-between h-16">
+            <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+              <!-- Mobile menu button-->
+              <button
+                class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+                aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <!-- Icon when menu is closed. -->
+                <!--
+                Heroicon name: menu
+    
+                Menu open: "hidden", Menu closed: "block"
+              -->
+                <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+                <!-- Icon when menu is open. -->
+                <!--
+                Heroicon name: x
+    
+                Menu open: "block", Menu closed: "hidden"
+              -->
+                <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+            <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
+              <div class="flex-shrink-0 flex items-center">
+                <img class="block lg:hidden h-8 w-auto"
+                  src="https://pngimage.net/wp-content/uploads/2018/05/doctor-plus-symbol-png-6.png" alt="Workflow">
+                <img class="hidden lg:block h-8 w-auto"
+                  src="https://pngimage.net/wp-content/uploads/2018/05/doctor-plus-symbol-png-6.png" alt="Workflow">
+                <span class="text-green-300 font-bold">X-SPARK</span>
+    
+              </div>
+              <div class="hidden sm:block sm:ml-6">
+                <div class="flex space-x-4">
+                  <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                  <a href="#" class="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium">Home</a>
+                  <a href="#"
+                    class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Features</a>
+                  <a href="{{ url_for('upload') }}"
+                    class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Demo</a>
+                </div>
+              </div>
+            </div>
+            <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+              <a type="button" href="{{ url_for('login') }}" "
+                class="border border-gray-700 bg-gray-700 text-white rounded-md px-4 py-2 m-2  select-none hover:bg-gray-800 focus:outline-none focus:shadow-outline">
+                Login
+              </a>
+            </div>
+          </div>
+        </div>
+    
+        <!--
+        Mobile menu, toggle classes based on menu state.
+    
+        Menu open: "block", Menu closed: "hidden"
+      -->
+        <div class="hidden sm:hidden">
+          <div class="px-2 pt-2 pb-3 space-y-1">
+            <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+            <a href="#" class="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium">Home</a>
+            <a href="#Features"
+              class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Features</a>
+            <a href="#"
+              class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Features</a>
+            <a href="#"
+              class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Demo</a>
+          </div>
+        </div>
+      </nav>
+      <!-- component -->
+<!-- component -->
+<!-- component -->
+<!-- comment form -->
+<div class="flex mx-auto items-center justify-center bg-green-100 shadow-lg mt-56 mx-8 mb-4 max-w-lg">
+    <form class="w-full max-w-xl bg-green-50 rounded-lg px-4 pt-2">
+       <div class="flex flex-wrap -mx-3 mb-6">
+          <h2 class="px-4 pt-3 pb-2 text-gray-800 font-weight-bold text-lg">Request a Service</h2>
+          <div class="w-full md:w-full px-3 mb-2 mt-2">
+            <label class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2" for="grid-first-name">
+               Title
+              </label>
+            <input class="bg-gray-100 rounded border border-gray-400 leading-normal resize-none w-full h-10 py-2 px-3 font-medium placeholder-gray-700 focus:outline-none focus:bg-white" name="body" placeholder='Type Your Comment' required></textarea>
+         </div>
+          <div class="w-full md:w-full px-3 mb-2 mt-2">
+            <label class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2" for="grid-first-name">
+                Service
+              </label>
+             <textarea class="bg-gray-100 rounded border border-gray-400 leading-normal resize-none w-full h-20 py-2 px-3 font-medium placeholder-gray-700 focus:outline-none focus:bg-white" name="body" placeholder='Type Your Comment' required></textarea>
+          </div>
+          <div class="w-full md:w-full flex items-start md:w-full px-3">
+             <div class="flex items-start w-1/2 text-gray-700 px-2 mr-auto">
+                <svg fill="none" class="w-5 h-5 text-gray-600 mr-1" viewBox="0 0 24 24" stroke="currentColor">
+                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                </svg>
+                <p class="text-xs md:text-sm pt-px"></p>
+             </div>
+             <div class="-mr-1">
+                <input type='submit' class="bg-green-100 text-gray-700 font-medium py-1 px-4 border border-gray-400 rounded-lg tracking-wide mr-1 hover:bg-gray-100" value='Submit'>
+             </div>
+          </div>
+       </form>
+    </div>
+ </div>
+</div>
+</body>
+</html>
