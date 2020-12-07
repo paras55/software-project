@@ -51,13 +51,13 @@ def query():
             return render_template('admin_request.html')
 
         elif username == 'client1' and password == 'client1':
-            return render_template('admin_dashboard.html')
+            return render_template('service.html')
 
         elif username == 'client2' and password == 'client2':
-            return render_template('admin_dashboard.html')
+            return render_template('service.html')
         
         else:
-            return render_template('login.html')
+            return render_template('login.html',warning="Id and password are not correct <br> Try again with correct id and passowrd")
 def face_mask_detector(frame):
   # frame = cv2.imread(fileName)
   gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
